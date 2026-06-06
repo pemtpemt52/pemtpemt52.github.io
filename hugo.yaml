@@ -1,0 +1,52 @@
+baseURL: "https://pemtpemt52.github.io/"
+languageCode: ko
+title: "pemtpemt52 blog"
+theme: PaperMod
+paginate: 10
+
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+
+params:
+  env: production
+  author:
+    name: pemtpemt52
+  defaultTheme: auto
+  ShowReadingTime: true
+  ShowShareButtons: false
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: true
+  ShowToc: true
+  comments: false
+
+  homeInfoParams:
+    Title: "블로그에 오신 것을 환영합니다"
+    Content: "다양한 정보를 공유합니다."
+
+  socialIcons: []
+
+menu:
+  main:
+    - name: 글 목록
+      url: /posts/
+      weight: 1
+    - name: 태그
+      url: /tags/
+      weight: 2
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
+
+disableKinds:
+  - taxonomy
+  - term

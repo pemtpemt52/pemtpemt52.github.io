@@ -1,0 +1,8 @@
+# 쇼핑 추천 (전체 카테고리)
+
+> 다양한 카테고리의 인기 상품을 가격·평점·리뷰 기준으로 큐레이션하는 추천 블로그입니다.
+
+## 콘텐츠
+- [전체 글 목록 (Sitemap)](https://pemtpemt52.github.io/sitemap.xml)
+- [RSS 피드](https://pemtpemt52.github.io/index.xml)
+- [상품 추천 글 목록](https://pemtpemt52.github.io/posts/)

@@ -6,8 +6,8 @@ categories: ["shopping"]
 tags: ["Top10", "shopping", "nmn영양제"]
 keywords: ["nmn영양제", "Top10", "shopping"]
 author: "pemtpemt52"
-description: "@media(max-width:480px){.cpg-img{float:none!important;max-width:100%!important;width:100%;margin:0 0…"
-summary: "@media(max-width:480px){.cpg-img{float:none!important;max-width:100%!important;width:100%;margin:0 0…"
+description: "nmn영양제 인기 상품을 가격·평점·리뷰 기준으로 정리한 TOP10 추천 리스트입니다. 나이가 들수록 체력 저하를 느끼시나요? NMN 영양제는 세포 에너지를 되살려주는 차세대 건강기능식품입니다. 천연 성분으로 안전하면서도 즉각적인 활력을 경험할 수 있으며, 피부…"
+summary: "nmn영양제 인기 상품을 가격·평점·리뷰 기준으로 정리한 TOP10 추천 리스트입니다. 나이가 들수록 체력 저하를 느끼시나요? NMN 영양제는 세포 에너지를 되살려주는 차세대 건강기능식품입니다. 천연 성분으로 안전하면서도 즉각적인 활력을 경험할 수 있으며, 피부…"
 cover:
   image: "https://thumbnail.coupangcdn.com/thumbnails/remote/657x657q90trim/image/retail/images/273291036137914-fa2c81d3-2dc2-46c8-915d-7710c6060049.jpg"
   alt: "nmn영양제 추천 TOP10 — 닥터루템 정품 THE NMN 플러스, 30정, 2개"

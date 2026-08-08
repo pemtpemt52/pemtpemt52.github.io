@@ -1,2 +1,20 @@
 <meta name="google-site-verification" content="w739yLSD3HSCAADo_vC7xrAqlY7aLJ5894-z1ae-SnE" />
 <meta name="naver-site-verification" content="fc18fec8104b193a3d4c873179c5b670c44f672b" />
+{{- /* SEO 보강: 테마 _partials/head.html 의 canonical·description·twitter 가 Hugo 0.161 빌드에서 누락되어 여기서 직접 출력 (extend_head 는 빌드 반영 검증됨) */}}
+<link rel="canonical" href="{{ .Permalink }}" />
+{{- with (.Params.description | default .Description) }}
+<meta name="description" content="{{ . }}" />
+{{- end }}
+{{- if .IsPage }}
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="{{ .Title }}" />
+{{- with (.Params.description | default .Summary) }}
+<meta name="twitter:description" content="{{ . }}" />
+{{- end }}
+{{- with .Params.cover.image }}
+<meta name="twitter:image" content="{{ . }}" />
+{{- end }}
+{{- end }}
+{{- if eq .Kind "term" }}
+<meta name="robots" content="noindex,follow" />
+{{- end }}

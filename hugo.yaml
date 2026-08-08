@@ -1,5 +1,6 @@
 baseURL: "https://pemtpemt52.github.io/"
 languageCode: ko
+defaultContentLanguage: ko
 title: "pemtpemt52 blog"
 theme: PaperMod
 paginate: 10
@@ -10,8 +11,8 @@ buildFuture: false
 
 params:
   env: production
-  author:
-    name: pemtpemt52
+  description: "다양한 카테고리의 인기 상품을 가격·평점·리뷰 기준으로 큐레이션하는 추천 블로그입니다."
+  author: pemtpemt52
   defaultTheme: auto
   ShowReadingTime: true
   ShowShareButtons: false
@@ -35,6 +36,9 @@ menu:
     - name: 태그
       url: /tags/
       weight: 2
+    - name: 카테고리
+      url: /categories/
+      weight: 3
 
 markup:
   goldmark:
@@ -47,6 +51,3 @@ outputs:
     - RSS
     - JSON
 
-disableKinds:
-  - taxonomy
-  - term

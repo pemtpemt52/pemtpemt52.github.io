@@ -51,3 +51,23 @@ outputs:
     - RSS
     - JSON
 
+# 2026-09-28 claude-seo 점검: 태그 페이지(글 1~2개)는 검색 제외·사이트맵 제외.
+# 예전엔 테마의 index,follow 와 extend_head 의 noindex,follow 가 한 페이지에 같이 나갔고 사이트맵의 절반이 태그였다.
+cascade:
+  - target:
+      path: "{/tags,/tags/**}"
+    params:
+      robotsNoIndex: true
+    sitemap:
+      disable: true
+
+# 관련 글(extend_post_content.html) — 같은 카테고리, 날짜가 가까운 순
+related:
+  includeNewer: true
+  threshold: 1
+  toLower: false
+  indices:
+    - name: categories
+      weight: 100
+    - name: date
+      weight: 10

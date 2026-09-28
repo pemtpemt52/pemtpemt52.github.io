@@ -1,0 +1,15 @@
+{{- /* 관련 글 — 같은 사이트·같은 카테고리에서 날짜가 가까운 글 5개(2026-09-28, claude-seo 점검).
+       글끼리 사이트 내부 링크가 0개라 오래된 글이 목록 100쪽 넘게 묻혀 있었다. noindex 글은 제외. */ -}}
+{{- if and .IsPage (eq .Section "posts") }}
+{{- $related := first 5 (where (site.RegularPages.Related .) "Params.robotsNoIndex" "ne" true) }}
+{{- with $related }}
+<nav class="related-posts" aria-label="관련 글">
+  <h2>관련 글</h2>
+  <ul>
+    {{- range . }}
+    <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+    {{- end }}
+  </ul>
+</nav>
+{{- end }}
+{{- end }}
